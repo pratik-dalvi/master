@@ -1,0 +1,19 @@
+{
+  "name": "master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "form.js",
+  "scripts": {
+    "json-server" : "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratik-dalvi/master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratik-dalvi/master/issues"
+  },
+  "homepage": "https://github.com/pratik-dalvi/master#readme"
+}

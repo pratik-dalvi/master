@@ -3,6 +3,7 @@
 <head>
     <title>Request A Demo Of Indio</title>
     <link rel="stylesheet" href="form.css">
+
 </head>
 
 <body>
@@ -17,12 +18,12 @@
                             <li><a href="#">HOW IT WORKS</a></li>
                             <li><a href="#">ABOUT US</a></li>
                             <li><a href="#">BLOG</a></li>
-                            <li><button class="active center">GET STARTED</button></li>
+                            <li><button class="btn">GET STARTED</button></li>
                        </ul>
             </div>
         </div>
 
-        <div >
+        <div>
             <h1 class="center">Request A Demo of Indio</h1>
         </div>
         <div class="center">
@@ -47,49 +48,49 @@
            
                 <div class="column">
                     <p class="pg">Sign up below to request a demo or call us at<br>
-                                                 (415)200-1404
+                    <span class="span2">(415)200-1404</span>
                     </p>
                     
                     <!-- <img src="img3.png" alt="image3"><br> -->
                     
-                        <form action="">
+                        <form action="#">
                             <div class="column">
                                <label for=" First Name"> First Name <span class="span1">*</span></label> 
-                                <input class="input1" type="text" placeholder="First name"name="firstname"> 
+                                <input class="input1" type="text" placeholder="First name" id="fname"> 
                             </div>
                             <div class="column">
                                     <label for=" Last Name"> Last Name <span class="span1">*</span></label> 
-                                     <input class="input1" type="text" placeholder="Last name"name="firstname"> 
+                                     <input class="input1" type="text" placeholder="Last name" id="lname"> 
                                  </div>
                                       
                             <div class="column1">
                                 <label for=" Email Address"> Email Address<span class="span1">*</span></label> 
-                                <input class="input1" type="email" placeholder="email@domain.com"name="emailaddress"> 
+                                <input class="input1" type="email" placeholder="email@domain.com"id="eid"> 
                             </div> 
                             <div class="column">
                                 <label for="password"> Password<span class="span1">*</span></label> 
-                                <input class="input1" type="password" placeholder="Password"name="password"> 
+                                <input class="input1" type="password" placeholder="Password"id="pwd"> 
                             </div>
                             <div class="column">
                                 <label for="confirmpassword">Confirm Password<span class="span1">*</span></label> 
-                                <input class="input1" type="password" placeholder="Confirm Password"name="password"> 
+                                <input class="input1" type="password" placeholder="Confirm Password"id="cpwd"> 
                             </div> 
                             <div class="column1">
                                 <label for="pno">Phone Number<span class="span1">*</span></label> 
-                                <input class="input1" type="number" placeholder="Phone Number"name="pno"> 
+                                <input class="input1" type="number" placeholder="Phone Number"id="pno"> 
                             </div> 
                             <div class="column1">
                                 <label for="gender">Gender<span class="span1">*</span></label><br>
-                                <input type="radio" name="gender" value="male"> Male<br>
-                                <input type="radio" name="gender" value="female"> Female<br>
+                                <input type="radio" name="gender" value="male"id="m"> Male<br>
+                                <input type="radio" name="gender" value="female"id="f"> Female<br>
                             </div> 
                             <div class="column1">
                                 <label for="bd">Birth Date<span class="span1">*</span></label> 
-                                <input class="input1" type="date"> 
+                                <input class="input1" type="date"id="date"> 
                             </div> 
                             <div class="column1">
                                 <label for="hu">How Did You Hear About Us? <span class="span1">*</span></label> 
-                                <input class="input1" list="hu" name="hu">
+                                <input class="input1" list="hu" id="hu">
                                 <datalist id="hu">
                                     <option value="Friend">
                                     <option value="Website">
@@ -98,7 +99,7 @@
                                 </datalist> 
                             </div>
                             <div class="center">
-                                <button class="active center">Register</button>   
+                                <button class="btn" id="register">Register</button>   
                             </div>
                                                                          
                                             
@@ -109,9 +110,8 @@
                     <div class="row">
                             <div class="column">
                                     <img class="image" src="logo.png" alt="indio">
-                
                             </div>
-                            <div class="column">
+                            <div class="footer1">
                                     <ul class="nav1">
                                             <li><a href="#">Terms of Service</a></li>
                                             <li><a href="#">Privacy Policy</a></li>
@@ -120,6 +120,9 @@
                             </div>
                         </div>
             </footer>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+        <script src= "form.js"></script>
 </body>
 
 </html>
