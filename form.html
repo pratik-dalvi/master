@@ -32,7 +32,7 @@
         
 
 
-        <div class="row">
+        <main class="row">
                 <div class="column">
                         <img class="image" src="img1.png" alt="image1">
                         <p><span class="span1">Easy to use:</span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -53,7 +53,7 @@
                     
                     <!-- <img src="img3.png" alt="image3"><br> -->
                     
-                        <form action="#">
+                        <form action="#" method="POST">
                             <div class="column">
                                <label for=" First Name"> First Name <span class="span1">*</span></label> 
                                 <input class="input1" type="text" placeholder="First name" id="fname"> 
@@ -81,8 +81,8 @@
                             </div> 
                             <div class="column1">
                                 <label for="gender">Gender<span class="span1">*</span></label><br>
-                                <input type="radio" name="gender" value="male"id="m"> Male<br>
-                                <input type="radio" name="gender" value="female"id="f"> Female<br>
+                                <input type="radio" name="gender" value="male"id="m">Male<br>
+                                <input type="radio" name="gender" value="female"id="f">Female<br>
                             </div> 
                             <div class="column1">
                                 <label for="bd">Birth Date<span class="span1">*</span></label> 
@@ -91,12 +91,9 @@
                             <div class="column1">
                                 <label for="hu">How Did You Hear About Us? <span class="span1">*</span></label> 
                                 <input class="input1" list="hu" id="hu">
-                                <datalist id="hu">
-                                    <option value="Friend">
-                                    <option value="Website">
-                                    <option value="Email">
-                                    <option value="Reference">
-                                </datalist> 
+                                <input type="checkbox" name="checkbox" value="friend">Friend<br>
+                                <input type="checkbox" name="checkbox" value="mail">Mail<br>
+                                <input type="checkbox" name="checkbox" value="google" checked>Google<br><br>
                             </div>
                             <div class="center">
                                 <button class="btn" id="register">Register</button>   
@@ -105,7 +102,19 @@
                                             
                          </form>
                 </div>
-            </div>
+            </main>
+
+            <table id="table">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Id</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Birth Date</th>
+                    <th>Feedback</th>
+                </tr>
+            </table>
             <footer>
                     <div class="row">
                             <div class="column">
