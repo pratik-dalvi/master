@@ -1,17 +1,27 @@
 {
   "data": [
     {
+      "firstname": "Pratik",
+      "lastname": "Dalvi",
+      "emailid": "pratik.dalvi@adapty.com",
+      "password": "12345",
+      "confirmpassword": "12345`",
+      "phonenumber": "9876543210",
+      "gender": "male",
+      "date": "1994-09-16",
+      "feedback": "friend",
+      "id": 1
+    },
+    {
       "firstname": "",
       "lastname": "",
       "emailid": "",
       "password": "",
       "confirmpassword": "",
       "phonenumber": "",
-      "male": "male",
-      "female": "female",
       "date": "",
-      "feedback": "",
-      "id": 1
+      "feedback": "friend",
+      "id": 2
     },
     {
       "firstname": "pratik",
@@ -20,24 +30,97 @@
       "password": "",
       "confirmpassword": "",
       "phonenumber": "",
-      "male": "male",
-      "female": "female",
       "date": "",
-      "feedback": "",
-      "id": 2
+      "feedback": "friend",
+      "id": 3
+    },
+    {
+      "firstname": "prem",
+      "lastname": "",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 4
     },
     {
       "firstname": "pratik",
       "lastname": "gawale",
-      "emailid": "pg@gmail.com",
+      "emailid": "",
       "password": "",
       "confirmpassword": "",
-      "phonenumber": "9876543210",
-      "male": "male",
-      "female": "female",
+      "phonenumber": "",
       "date": "",
-      "feedback": "",
-      "id": 3
+      "feedback": "friend",
+      "id": 5
+    },
+    {
+      "firstname": "pratik",
+      "lastname": "gawale",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 6
+    },
+    {
+      "firstname": "pra",
+      "lastname": "tik",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 7
+    },
+    {
+      "firstname": "pratik",
+      "lastname": "tik",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 8
+    },
+    {
+      "firstname": "pratik",
+      "lastname": "gada",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 9
+    },
+    {
+      "firstname": "pratik",
+      "lastname": "gada1",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 10
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "emailid": "",
+      "password": "",
+      "confirmpassword": "",
+      "phonenumber": "",
+      "date": "",
+      "feedback": "friend",
+      "id": 11
     }
   ]
 }
