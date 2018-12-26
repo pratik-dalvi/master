@@ -42,29 +42,41 @@ $(document).ready(function () {
                 tr.append("<td>" + json[i].gender + "</td>");
                 tr.append("<td>" + json[i].date + "</td>");
                 tr.append("<td>" + json[i].checkbox + "</td>");
-                $('#table').append(tr);
+                  $('#table').append(tr);
             }
         });
 });
+
+
+
+
 
 function validate(fieldId, msg, maxLen, minLen, regEx){
     var isValid = false;
     $(fieldId).focusout(function(){
     var $this = $(this)
     var fieldLen = $(this).val().length;
-    if(fieldLen < minLen && fieldLen > maxLen){
-    $this.next('.error-message').text(msg).show();
-    $this.addClass('input-box');
+    if(fieldLen < minLen || fieldLen > maxLen){
+    $this.addClass('field-invalid').next('.error-id').text(msg).show();
     }else {
-    $this.next('.error-message').text(msg).hide();
-    $this.removeClass('input-box');
+    $this.removeClass('field-invalid').next('.error-id').text(msg).hide();
     }
     if(regEx) {
     regEx.test('s')
     }
     });
     }
-validate("#fname","Invalid Name",20,5,"/[^-\s]/");
-validate("#lname","Invalid Name",20,5,"/[^-\s]/");
-validate("#eid","Invalid Email",10,20,"/[ ^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-{2,})$]/");
-validate("eid","Invalid Password",8,8,"/[^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,}]/");
+
+    function validatePassword(){
+        if(password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+          confirm_password.setCustomValidity('');
+        }
+      }
+
+validate("#fname","Invalid Name",20,5,/^[a-zA-Z\-]+$/);
+validate("#lname","Invalid Name",20,5,/^[a-zA-Z\-]+$/);
+validate("#eid","Invalid Email",20,10,/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.(a-zA-Z){2,5}$/);
+validate("#pwd","Invalid Password",10,8,/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]$/);
+validate("#pno","Invalid Number",10,10,/^(\+\d{1,3}[- ]?)?\d$/);
