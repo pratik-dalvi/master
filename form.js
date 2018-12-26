@@ -23,7 +23,6 @@ $(document).ready(function () {
             success: function (json) {
                 
                 var tr = "<tr><td>" + json.firstname + "</td><td>" + json.lastname + "</td><td>" + json.emailid + "</td><td>" + json.phonenumber + "</td><td>" + json.gender + "</td><td>" + json.date + "</td><td>" + json.checkbox + "</td></tr>";
-                console.log(tr);
                     $('#table').append(tr);
             }
         });
@@ -80,3 +79,4 @@ validate("#lname","Invalid Name",20,5,/^[a-zA-Z\-]+$/);
 validate("#eid","Invalid Email",20,10,/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.(a-zA-Z){2,5}$/);
 validate("#pwd","Invalid Password",10,8,/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]$/);
 validate("#pno","Invalid Number",10,10,/^(\+\d{1,3}[- ]?)?\d$/);
+validatePassword();
